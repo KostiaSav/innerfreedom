@@ -1,0 +1,41 @@
+.dark__block {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 26px;
+	border-radius: 14px;
+	background: rgb(0, 0, 0);
+	padding: 14px 24px 14px 24px;
+}
+
+.dark__block h2 {
+	color: rgb(219, 255, 0);
+	font-size: 53.25px;
+	font-weight: 500;
+	line-height: 61px;
+	margin: 0;
+}
+
+.dark__block p {
+	color: rgb(255, 255, 255);
+	font-size: 17.75px;
+	font-weight: 500;
+	line-height: 23px;
+}
+
+@media screen and (max-width: 821px) {
+	.dark__block {
+		margin: 0 20px;
+		padding: 14px 4px 14px 14px;
+		gap: 14px;
+	}
+
+	.dark__block h2 {
+		font-size: 36px;
+	}
+
+	.dark__block p {
+		text-align: left;
+		font-size: 15px;
+	}
+}

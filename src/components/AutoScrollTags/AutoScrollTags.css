@@ -1,0 +1,41 @@
+.tag-scroll {
+	overflow: hidden;
+	white-space: nowrap;
+	padding: 16px 0;
+}
+
+.tag-track {
+	display: flex;
+	animation: tag-scroll-left 25s linear infinite;
+}
+
+.tag-item {
+	display: flex;
+	align-items: center;
+	background-color: #000;
+	border: 2px solid white;
+	border-radius: 7px;
+	padding: 8px 16px;
+	margin: 0 2px;
+	flex-shrink: 0;
+	color: white;
+	font-size: 16px;
+	font-weight: 500;
+}
+
+.tag-item img {
+	width: 28px;
+	height: 28px;
+	border-radius: 8px;
+	margin-right: 10px;
+	object-fit: cover;
+}
+
+@keyframes tag-scroll-left {
+	0% {
+		transform: translateX(0);
+	}
+	100% {
+		transform: translateX(-50%);
+	}
+}
